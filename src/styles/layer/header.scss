@@ -1,0 +1,94 @@
+@import "../variable.scss";
+
+.layer-header {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    padding: .8rem 1rem;
+    z-index: 2;
+    width: 100%;
+
+    &.row [class^="col-"], &.row [class*="col-"]{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &.sticky {
+        background-color: #fff;
+        width: 100%;
+        overflow: hidden;
+        .mark-zone {
+            display: flex;
+            justify-content: space-around;
+            width: 310px;
+            overflow-x:scroll;
+
+            span {
+                color: grey;
+                font-size: 1.4rem;
+                &.hit {
+                    font-size: 1.6rem;
+                    color: $color_primary;
+
+                }
+            }
+        }
+
+        span {
+            color: black;
+            background-color: transparent;
+            font-size: 1.6rem;
+            padding: 0;
+        }
+    }
+
+
+    button {
+        color: #fff;
+        background-color: #f4f8f88a;
+        background-color: rgba(0,0,0,0.1);
+        border-radius: 1.5rem;
+        border: none;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+}
+
+.header_titlele{
+    margin-top: 10px;
+    font-size: 13px;
+    color: rgb(51,57,57);
+}
+.header_wiht{
+    overflow: hidden;
+    max-width: 130px; 
+}
+.header_detailsle{
+    margin-top: 5px;
+    font-size: 12px;
+    color:#cfcfcf;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    max-width: 120px;
+}
+.title>Col{
+    font-size: 32px;
+    border:  1px solid;
+}
+
+.header_qw{
+    padding-right: 3px;
+}
+
+#dropdown-more-category {
+    height: 100%;
+}
+
+.header_butleft{
+    width: 50px;
+    float: right;
+    transform: translate(5px,-100px);
+}

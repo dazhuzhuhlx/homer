@@ -1,0 +1,16 @@
+@import "../variable.scss";
+
+.layer-category {
+    margin: 0  0 $margin_h * 2 0;
+    text-align: center;
+    padding: 2.5rem 0 1.5rem 0;
+    div {
+        margin: 0;
+        padding: 0;
+    }
+    p {
+        font-size: 13px;
+        margin-top: 4px;
+        color: rgb(56, 60,66);
+    }
+}

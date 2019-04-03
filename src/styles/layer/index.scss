@@ -1,0 +1,19 @@
+@import "./header.scss";
+@import "./banner.scss";
+@import "./category.scss";
+@import "./course.scss";
+@import "./footer.scss";
+
+.layer {
+    background-color: #fff;
+}
+
+.homesy{
+    width: 45px;
+    margin-top: 23px;
+    transform: translateX(4px);
+}
+.graya{
+    height: 10px;
+    background-color:#F0F0F0;
+}

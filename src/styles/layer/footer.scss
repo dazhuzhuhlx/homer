@@ -1,0 +1,82 @@
+.layer-footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #748080;
+}
+.foter{
+    margin-top: 20px;
+    text-align: center;
+    height: 40px;
+}
+
+#bac{
+    background-color: #F0F0F0;
+}
+.head{
+    display: flex;
+    width: 92%;
+    margin: auto;
+    height: 38px;
+    line-height: 37px;
+    background-color: #F0F0F0;
+}
+.gap{
+    margin-bottom:10px; 
+}
+.theleft{
+    width: 40px;
+}
+.thecentre{
+    text-align: center;
+    margin: auto;
+}
+.theright{
+    width: 40px;
+}
+#mater{
+    height: 160px;
+    width: 92%;
+    margin: auto;
+    border-radius: 8px;
+    background-color: white
+}
+
+.amginlll{
+    margin:30px 32px 45px 0;
+}
+.headser{
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    margin: auto; 
+    overflow: hidden;
+}
+.bton>button{
+    width: 86%;
+    height: 45px;
+    background-color: white;
+    color: #000;
+    border: none;
+    font-size: 18px;
+    border: white;
+}
+.bton>button>div{
+    display: flex;
+    margin-left:12%;
+}
+.bton>button>div>div>img{
+    width: 30px;
+}
+.bton>button>div>div>span{
+    margin-left: 5px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.col-7{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.btn:not(:disabled):not(.disabled):hover{
+    text-decoration: none;
+}
