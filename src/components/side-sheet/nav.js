@@ -6,6 +6,7 @@ import cs from "classnames";
 import { isGranted } from "../../shared/cookies";
 import {debuggor} from '../../shared/debuggor';
 import { data as links } from "./links.json";
+import { data as asset_7 } from "./asset_7.json";
 
 
 import ioqqq from "./IMG/profileoh.jpg";
@@ -13,6 +14,7 @@ import tag_1 from "./IMG/tag_1.png";
 import tag_2 from "./IMG/tag_2.png";
 import tag_5 from "./IMG/tag_5.png";
 
+const tag_ = [tag_1 ,tag_2 ,tag_5];
 
 const link = links.reduce(
     (result, { to, show_header = true }) => Object.assign(result, { [to]: show_header }),
@@ -47,24 +49,16 @@ const Nav = React.memo(({ location: { pathname: current } }) => {
             </div>
         </div>
         <div className="bton">
+
+        {asset_7.map(({coulnma},index)=>(
             <Button variant="light">
-                <div>
-                    <div><img src={tag_1} alt=""/></div>
-                    <div><span>明星课堂</span></div>
-                </div>
+            <div>
+                <div><img src={tag_[index]} alt=""/></div>
+                <div><span>{coulnma}</span></div>
+            </div>
             </Button>
-            <Button variant="light">
-                <div>
-                    <div><img src={tag_2} alt=""/></div>
-                    <div><span>自测工具</span></div>
-                </div>
-            </Button>
-            <Button variant="light">
-                <div>
-                    <div><img src={tag_5} alt=""/></div>
-                    <div><span>VIP服务</span></div>
-                </div>
-            </Button>
+        ))}
+
         </div>
 
             {_links}

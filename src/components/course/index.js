@@ -11,7 +11,7 @@ const course = {
 
 const defaultHandler = { go: () => console.log("No Action Bound For Click") };
 
-export default React.memo(({hrf_1,hrf_2,hrf_3,hrf_4,hrf_5,newesta_1,newesta_2,newesta_3,newesta_4,newesta_5,i_course1,i_course2,i_course3,i_course4,i_course5,category = "star", handler = defaultHandler, moreHref = "/"}) => (
+export default React.memo(({i_course1,newesta_1,hrf_1, category = "star", handler = defaultHandler, moreHref = "/"}) => (
     <div className="layer layer-course">
         <Row className="title">
             <Col xs={{ span: 3 }}>{course[category]}课程</Col>
@@ -23,38 +23,17 @@ export default React.memo(({hrf_1,hrf_2,hrf_3,hrf_4,hrf_5,newesta_1,newesta_2,ne
             </Col>
         </Row>
         <div className="content">
+        {i_course1.map((img, index) => (
             <div>
                 <div className="header_qw">
-                    <a href={hrf_1}>
-                        <img src={i_course1} alt=""/>
+                    <a href={hrf_1[index]} key={index} class="a_liks">
+                        <img src={img} alt=""/>
                     </a>
-                    <div className="header_titlele"><div className="header_wiht">{newesta_1}</div></div>
-                </div>
-                <div className="qw">
-                    <a href={hrf_2}>
-                        <img src={i_course2} alt=""/>
-                    </a>
-                    <div className="header_titlele"><div className="header_wiht">{newesta_2}</div></div>
-                </div>
-                <div className="qw">
-                    <a href={hrf_3}>
-                        <img src={i_course3} alt=""/>
-                    </a>
-                    <div className="header_titlele"><div className="header_wiht">{newesta_3}</div></div>
-                </div>
-                <div className="qw">
-                    <a href={hrf_4}>
-                        <img src={i_course4} alt=""/>
-                    </a>
-                    <div className="header_titlele"><div className="header_wiht">{newesta_4}</div></div>
-                </div>
-                <div className="qw">
-                    <a href={hrf_5}>
-                        <img src={i_course5} alt=""/>
-                    </a>
-                    <div className="header_titlele"><div className="header_wiht">{newesta_5}</div></div>
+                    <div className="header_titlele"><div className="header_wiht" key={index}>{newesta_1[index]}</div>
                 </div>
             </div>
         </div>
+        ))}
+    </div>
     </div>
 ));

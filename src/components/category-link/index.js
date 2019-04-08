@@ -7,23 +7,19 @@ import not_1 from "./IMG/icon-生理问题@3x.png";
 import not_2 from "./IMG/icon-食物介绍@2x.png";
 import not_3 from "./IMG/icon-生活习惯@2x.png";
 import not_4 from "./IMG/icon-基因揭秘@2x.png";
+import {data as asset_2} from "./asset_2.json"
 
-const category = [
-    { name: "食物营养", name_en: "nutrition", brand: not_2 },
-    { name: "营养基因", name_en: "food_intr", brand: not_4 },
-    { name: "生活习惯", name_en: "habit", brand: not_3 },
-    { name: "健康问题", name_en: "faq", brand: not_1 },
-];
+const category = [ not_2 , not_4 , not_3 , not_1 ];
 
 export default React.memo(({ handler }) => (
     <Row className="layer layer-category">
-        {category.map(({ name, name_en, brand }) => (
+        {asset_2.map(({ name, name_en },index) => (
             <Col xs={3} key={name_en}>
                 <Button 
                     variant="link"
                     onClick={handler.go}
                     data-href={`/course_category/${name_en}`}>
-                    {<div className="homesy"><img src={brand} alt="" /></div>}
+                    {<div className="homesy"><img src={category[index]} alt="" /></div>}
                     <p>{name}</p>
                 </Button>
             </Col>
