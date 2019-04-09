@@ -22,4 +22,5 @@ export default React.memo(({ handler,asset}) => (
             </a>
           ))}
     </div>
-));
+）） ;
+/ **/
