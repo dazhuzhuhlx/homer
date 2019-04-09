@@ -11,9 +11,8 @@ export default class Banner extends Component {
   render() {
     return (
       <Carousel>
-        
-        {assets.map(({ url, alt }, index) => (
-          <Carousel.Item>
+        {assets.map(({ url, alt, id }, index) => (
+          <Carousel.Item key={id}>
             <a href={url}>
               <img className="d-block w-100" src={images[index]} alt={alt} />
             </a>

@@ -1,34 +1,44 @@
 {
     "data":[
         {
-            "bat_1":"孩子食欲不好怎么办?周末和孩子一起做这道菜吧！",
-            "bat_2":"基因家",
-            "bat_3":"2019年3月1日",
-            "hrf_1":"https://mp.weixin.qq.com/s/Tnqff9PcBFfT9ojf0KP5CA"
+            "id": 1,
+            "category": "nutrition",
+            "title":"孩子食欲不好怎么办?周末和孩子一起做这道菜吧！",
+            "link":"https://mp.weixin.qq.com/s/Tnqff9PcBFfT9ojf0KP5CA",
+            "author":"基因家",
+            "date":"2019年3月1日"
         },
         {
-            "bat_1":"[元宵特辑]儿童怎样吃汤圆更好消化？",
-            "bat_2":"一天营养师",
-            "bat_3":"2019年2月18日",
-            "hrf_1":"https://mp.weixin.qq.com/s/DqyL7tsOBINvO87MkWIqbg"
+            "id": 2,
+            "category": "nutrition",
+            "title":"[元宵特辑]儿童怎样吃汤圆更好消化？",
+            "link":"https://mp.weixin.qq.com/s/DqyL7tsOBINvO87MkWIqbg",
+            "author":"一天营养师",
+            "date":"2019年2月18日"
         },
         {
-            "bat_1":"孩子缺铁，你有想过是“它”的原因吗？",
-            "bat_2":"一天营养师",
-            "bat_3":"2019年1月29日",
-            "hrf_1":"https://mp.weixin.qq.com/s/kRydlF0lBjKAssMoCa6SSw"
+            "id": 3,
+            "category": "nutrition",
+            "title":"孩子缺铁，你有想过是“它”的原因吗？",
+            "link":"https://mp.weixin.qq.com/s/kRydlF0lBjKAssMoCa6SSw",
+            "author":"一天营养师",
+            "date":"2019年1月29日"
         },
         {
-            "bat_1":"孩子长不高，竟是因为吃多了糖？！",
-            "bat_2":"一丁营养师",
-            "bat_3":"2019年1月15日",
-            "hrf_1":"https://mp.weixin.qq.com/s/ZzvMAVe_-EEdSH-TvtTKow"
+            "id": 4,
+            "category": "nutrition",
+            "title":"孩子长不高，竟是因为吃多了糖？！",
+            "link":"https://mp.weixin.qq.com/s/ZzvMAVe_-EEdSH-TvtTKow",
+            "author":"一丁营养师",
+            "date":"2019年1月15日"
         },
         {
-            "bat_1":"儿童食品更符合孩子需要吗？",
-            "bat_2":"基因家",
-            "bat_3":"2018年12月18日",
-            "hrf_1":"https://mp.weixin.qq.com/s/7eahVQb0SmexuOdEpLydvw"
+            "id": 5,
+            "category": "nutrition",
+            "title":"儿童食品更符合孩子需要吗？",
+            "link":"https://mp.weixin.qq.com/s/7eahVQb0SmexuOdEpLydvw",
+            "author":"基因家",
+            "date":"2018年12月18日"
         }
     ]
 }
