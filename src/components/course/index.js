@@ -12,12 +12,7 @@ const course = {
 const defaultHandler = { go: () => console.log("No Action Bound For Click") };
 
 export default React.memo(
-  ({
-    asset,
-    category = "star",
-    handler = defaultHandler,
-    moreHref = "/"
-  }) => (
+  ({ asset, category = "star", handler = defaultHandler, moreHref = "/" }) => (
     <div className="layer layer-course">
       <Row className="title">
         <Col xs={{ span: 3 }}>{course[category]}课程</Col>
@@ -29,21 +24,19 @@ export default React.memo(
         </Col>
       </Row>
       <div className="content">
-        {asset.map((asset) => (
-          <div>
+        {asset.map(asset => (
+          <div key={asset.hrf_}>
             <div className="header_qw">
               <a href={asset.hrf_} className="a_liks">
                 <img src={asset.star_course_image} alt="" />
               </a>
               <div className="header_titlele">
-                <div className="header_wiht">
-                  {asset.newesta_}
-                </div>
+                <div className="header_wiht">{asset.newesta_}</div>
               </div>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </div> ///
   )
 );
