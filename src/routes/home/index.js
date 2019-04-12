@@ -64,7 +64,7 @@ export default class Home extends React.Component {
           handler={this.handler}
           asset={assets_4}
           category="star"
-          moreHref="/qwer"
+          moreHref="/star_course"
           />
         <Course
           handler={this.handler}

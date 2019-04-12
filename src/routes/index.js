@@ -3,9 +3,10 @@ import { Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "../styles/index.scss";
 import SideSheet from "../components/side-sheet";
-import Surplus_dlh from "./surplus-dlh";
 import Home from "./home";
 import RecentCourse from "./recent-course";
+// import StarCourse from "./star-course_deprecated";
+// import Surplus_dlh from "./surplus-dlh";
 import StarCourse from "./star-course";
 import CourseCategory from "./course-category";
 
@@ -19,7 +20,7 @@ export default () => (
             <Route exact path="/recent_course" component={RecentCourse} />
             <Route exact path="/star_course" component={StarCourse} />
             <Route exact path="/course_category/:category" component={CourseCategory} />
-            <Route exact path="/qwer" component={Surplus_dlh} />
+            {/*<Route exact path="/qwer" component={Surplus_dlh} /> */}
 
             <Route component={NotFound} />
         </Switch>

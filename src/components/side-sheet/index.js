@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from 'react-bootstrap/lib/Modal'
+import Modal from 'react-bootstrap/Modal'
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as actionCreators from "../../actions/layer";

@@ -1,70 +1,30 @@
-import React from "react";
-import Row from "react-bootstrap/lib/Row";
-import Col from "react-bootstrap/lib/Col";
-import cx from "classnames";
-import Banner from "../../components/banner";
-import Footer from "../../components/footer";
-import CourseList from "../../components/course-list";
+import React, { Component } from "react";
+import stars_1 from "./IMG/明星课程查看更多-儿童食品@3x.png";
+import stars_2 from "./IMG/明星课程查看更多-缺铁@2x.png";
+import stars_3 from "./IMG/明星课程查看更多-糖@2x.png";
+import stars_4 from "./IMG/明星课程查看更多-果汁@2x.png";
+import { data as asset_8 } from "./asset_8.json";
 
-import i_banner_1 from "./IMG/首页图2.jpg";
-import i_banner_2 from "./IMG/首页图3.jpg";
+const stars = [stars_1, stars_2, stars_3, stars_4];
 
-const SHOW = {
-    list: "list",
-    intr: "intr",
-};
-class StarCourse extends React.Component {
-    state = { show: SHOW.list };
-
-    chose = ({
-        target: {
-            name
-        },
-    }) => {
-        console.log(name);
-        if (this.state.show === name) return;
-        this.setState({ show: name });
-    };
-
-    goTo = () => {
-        
-    };
-
-    handler = { goToWxBlog: this.goTo };
-
-    render() {
-        const { show } = this.state;
-        return (
-            <div>
-                <Banner imgs={[i_banner_1]} />
-                <Row className="star-course-nav">
-                    <Col xs={6} className={cx({ "tab-hit": show === SHOW.intr })}>
-                        <button onClick={this.chose} name={SHOW.intr}>
-                            课程介绍
-                        </button>
-                    </Col>
-                    <Col xs={6} className={cx({ "tab-hit": show === SHOW.list })}>
-                        <button onClick={this.chose} name={SHOW.list}>
-                            课程列表
-                        </button>
-                    </Col>
-                </Row>
-                {show === SHOW.intr && (
-                    <div className="course-intr">
-                        <h3>课程介绍</h3>
-                        <p>
-                            Some quick example text to build on the card title and make up the bulk
-                            of the card's content.
-                        </p>
-                    </div>
-                )}
-                {show === SHOW.list && (
-                    <CourseList imgs={[i_banner_1, i_banner_2]} handler={this.handler} />
-                )}
-                <Footer />
+export default class Banner extends Component {
+  render() {
+    return (
+      <div>
+        {asset_8.map(({ hrf_ }, index) => (
+          <div className="mater" key={hrf_}>
+            <div className="gap" />
+            <div className="imga">
+              <a href={hrf_}>
+                <img alt="Banner Zone" src={stars[index]} />
+              </a>
             </div>
-        );
-    }
+          </div>
+        ))}
+        <div className="layer-footer foter">
+          &copy; 2019 Powered By 基因家&reg;
+        </div>
+      </div>
+    );
+  }
 }
-
-export default StarCourse;

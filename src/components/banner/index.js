@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Carousel from "react-bootstrap/lib/Carousel";
+import Carousel from "react-bootstrap/Carousel";
 
 import i_banner_1 from "./IMG/lb.png";
 import i_banner_2 from "./IMG/关注儿童营养banner@2x.png";
 import { data as assets } from "./asset.json";
 
-const images = [i_banner_1, i_banner_2, i_banner_2];
+const images = [i_banner_1, i_banner_2];
 
 export default class Banner extends Component {
   render() {

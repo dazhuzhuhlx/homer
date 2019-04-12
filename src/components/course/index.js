@@ -1,7 +1,7 @@
 import React from "react";
-import Row from "react-bootstrap/lib/Row";
-import Col from "react-bootstrap/lib/Col";
-import Button from "react-bootstrap/lib/Button";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import Icon from "../icon";
 
 const course = {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import Row from "react-bootstrap/lib/Row";
+import Row from "react-bootstrap/Row";
 import cx from "classnames";
 import * as actionCreators from "../../actions/layer";
 

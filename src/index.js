@@ -6,7 +6,7 @@ import thunk from "redux-thunk";
 import { createLogger } from "redux-logger";
 // import { routerMiddleware } from "react-router-redux";
 import { routerMiddleware, ConnectedRouter } from "connected-react-router";
-import createHistory from "history/createBrowserHistory";
+import { createBrowserHistory as createHistory } from "history";
 import Loadable from "react-loadable";
 
 import callAPIMiddleware from "./callFetchMiddleware";
