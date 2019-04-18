@@ -1,4 +1,6 @@
 # Logs
+/.history
+/build
 /*.rar
 logs
 *.log

@@ -1,0 +1,20 @@
+{
+    "data":[
+        {
+            "name": "食物营养", 
+            "name_en": "food_intr"
+        },
+        {
+            "name": "营养基因", 
+            "name_en": "nutri-gene"
+        },
+        {
+            "name": "生活习惯", 
+            "name_en": "habit"
+        },
+        {
+            "name": "健康问题", 
+            "name_en": "health_issue"
+        }
+    ]
+}
