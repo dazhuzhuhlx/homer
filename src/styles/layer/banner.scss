@@ -13,8 +13,10 @@ ol, ul, dl{
 }
 
 .carousel-control-prev:hover, 
-.carousel-control-prev:focus,
+.carousel-control-prev:focus {
+    background: linear-gradient(-90deg, #fff0, #fff);
+}
 .carousel-control-next:hover, 
 .carousel-control-next:focus{
-    -webkit-box-shadow: gray 0px 0px 15px;
+    background: linear-gradient(90deg, #fff0, #fff);
 }
